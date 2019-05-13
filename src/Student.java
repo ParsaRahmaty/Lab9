@@ -4,7 +4,8 @@ public class Student extends Person {
     private String department;
     private ArrayList<Course> courses;
 
-    public Student(String department) {
+    public Student(String name, String lastName, int yearEntered, int id, String department) {
+        super(name, lastName, yearEntered, id);
         this.department = department;
         courses = new ArrayList<>();
     }
