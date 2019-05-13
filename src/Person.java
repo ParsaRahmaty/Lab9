@@ -1,8 +1,8 @@
 public class Person {
-    private String name;
-    private String lastName;
-    private int yearEntered;
-    private int id;
+    protected String name;
+    protected String lastName;
+    protected int yearEntered;
+    protected int id;
 
     public Person(String name, String lastName, int yearEntered, int id) {
         this.name = name;

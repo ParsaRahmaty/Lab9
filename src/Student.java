@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Student extends Person {
-    private String department;
-    private ArrayList<Course> courses;
+    protected String department;
+    protected ArrayList<Course> courses;
 
     public Student(String name, String lastName, int yearEntered, int id, String department) {
         super(name, lastName, yearEntered, id);
