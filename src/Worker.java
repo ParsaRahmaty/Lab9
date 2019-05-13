@@ -7,6 +7,14 @@ public class Worker extends AbstractEmployee {
     }
 
     public void abstractUpdateIncome(UniversitySystem universitySystem) {
+        currentIncome = 3 * 1000000;
+    }
 
+    public boolean abstractIsPromotable(UniversitySystem universitySystem) {
+        if (universitySystem.getCurrentDateAndTime().getYear() - lastPromotionDate.getYear() >= 3) {
+            setLastPromotionDate(universitySystem.getCurrentDateAndTime());
+            return true;
+        } else
+            return false;
     }
 }

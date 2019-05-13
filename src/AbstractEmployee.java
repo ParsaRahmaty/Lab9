@@ -8,6 +8,7 @@ public abstract class AbstractEmployee extends Person {
     protected ArrayList<LegalFish> legalFishes;
     protected int currentIncome;
     protected Account account;
+    protected DateAndTime lastPromotionDate;
 
     public AbstractEmployee(String name, String lastName, int yearEntered, int id, String post, AccountingManagement accountingManagement) {
         super(name, lastName, yearEntered, id);
@@ -35,5 +36,23 @@ public abstract class AbstractEmployee extends Person {
 
     public Account getAccount() {
         return account;
+    }
+
+    public abstract boolean abstractIsPromotable(UniversitySystem universitySystem);
+
+    public void setLastPromotionDate(DateAndTime lastPromotionDate) {
+        this.lastPromotionDate = lastPromotionDate;
+    }
+
+    public DateAndTime getLastPromotionDate() {
+        return lastPromotionDate;
+    }
+
+    public int getCurrentIncome() {
+        return currentIncome;
+    }
+
+    public void setCurrentIncome(int currentIncome) {
+        this.currentIncome = currentIncome;
     }
 }

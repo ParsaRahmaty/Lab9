@@ -4,12 +4,14 @@ public class Course {
     private String name;
     private Teacher teacher;
     private Teacher teacherAssistant;
-    private ArrayList<Student> students = new ArrayList<>();
+    private ArrayList<Student> students;
     private DateAndTime startTime;
 
-    public Course(String name, Teacher teacherAssistant) {
+    public Course(String name, Teacher teacher, DateAndTime startTime) {
         this.name = name;
-        this.teacherAssistant = teacherAssistant;
+        this.teacher = teacher;
+        students = new ArrayList<>();
+        this.startTime = startTime;
     }
 
     public Teacher getTeacherAssistant() {
@@ -42,5 +44,9 @@ public class Course {
     public void removeStudent(Student student) {
         if (students.contains(student))
             students.remove(student);
+    }
+
+    public DateAndTime getStartTime() {
+        return startTime;
     }
 }
