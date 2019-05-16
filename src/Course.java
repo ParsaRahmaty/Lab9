@@ -10,7 +10,7 @@ public class Course {
     public Course(String name, Teacher teacher, DateAndTime startTime) {
         this.name = name;
         this.teacher = teacher;
-        students = new ArrayList<>();
+        this.students = new ArrayList<>();
         this.startTime = startTime;
     }
 

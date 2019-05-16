@@ -17,7 +17,7 @@ public class Teacher extends AbstractEmployee {
     }
 
     public Course[] getCourses() {
-        Course[] currentCoursesArray = new Course[currentCourses.size()];
+        Course[] currentCoursesArray = new Course[courses.size()];
         return currentCoursesArray;
     }
 

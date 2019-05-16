@@ -12,6 +12,7 @@ public abstract class AbstractEmployee extends Person {
 
     public AbstractEmployee(String name, String lastName, int yearEntered, int id, String post, AccountingManagement accountingManagement) {
         super(name, lastName, yearEntered, id);
+        legalFishes = new ArrayList<>();
         this.post = post;
         this.account = new Account(this);
         accountingManagement.addAccount(this.account);

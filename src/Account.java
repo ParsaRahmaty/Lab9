@@ -31,9 +31,9 @@ public class Account {
     }
 
     public void checkout(AccountingManagement accountingManagement, UniversitySystem universitySystem) {
+        LegalFish legalFish = new LegalFish(accountingManagement.genLegalFishId(), ownFromUniversity, universitySystem.getCurrentDateAndTime(), owner);
         balance += ownFromUniversity;
         ownFromUniversity = 0;
-        LegalFish legalFish = new LegalFish(accountingManagement.genLegalFishId(), universitySystem.getDateAndTime(), owner);
         accountingManagement.addLegalFish(legalFish);
         owner.addLegalFish(legalFish);
     }

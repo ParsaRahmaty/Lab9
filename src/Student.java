@@ -7,7 +7,7 @@ public class Student extends Person {
     public Student(String name, String lastName, int yearEntered, int id, String department) {
         super(name, lastName, yearEntered, id);
         this.department = department;
-        courses = new ArrayList<>();
+        this.courses = new ArrayList<>();
     }
 
     public String getDepartment() {

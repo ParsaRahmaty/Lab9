@@ -4,10 +4,11 @@ import java.util.ArrayList;
  * Created by 9731021 on 5/13/2019.
  */
 public class Master extends Student{
-    ArrayList<Essay> essays = new ArrayList<>();
+    ArrayList<Essay> essays;
 
     public Master(String name, String lastName, int yearEntered, int id, String department) {
         super(name, lastName, yearEntered, id, department);
+        this.essays = new ArrayList<>();
     }
 
     public Essay[] getEssays() {
