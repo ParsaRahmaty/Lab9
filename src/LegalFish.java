@@ -5,9 +5,9 @@ public class LegalFish {
     private int id;
     private int amount;
     private DateAndTime dateAndTime;
-    private AbstractEmployee employee;
+    private AccountingInterface employee;
 
-    public LegalFish(int id, int amount, DateAndTime dateAndTime, AbstractEmployee employee) {
+    public LegalFish(int id, int amount, DateAndTime dateAndTime, AccountingInterface employee) {
         this.id = id;
         this.amount = amount;
         this.dateAndTime = dateAndTime;
@@ -26,7 +26,7 @@ public class LegalFish {
         return dateAndTime;
     }
 
-    public AbstractEmployee getEmployee() {
+    public AccountingInterface getEmployee() {
         return employee;
     }
 }

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 /**
  * Created by 9731021 on 5/13/2019.
  */
-public abstract class AbstractEmployee extends Person {
+public abstract class AbstractEmployee extends Person implements AccountingInterface {
     protected String post;
     protected ArrayList<LegalFish> legalFishes;
     protected int currentIncome;

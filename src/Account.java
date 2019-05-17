@@ -2,15 +2,15 @@
  * Created by 9731021 on 5/13/2019.
  */
 public class Account {
-    private AbstractEmployee owner;
+    private AccountingInterface owner;
     private int balance;
     private int ownFromUniversity;
 
-    public Account(AbstractEmployee owner) {
+    public Account(AccountingInterface owner) {
         this.owner = owner;
     }
 
-    public AbstractEmployee getOwner() {
+    public AccountingInterface getOwner() {
         return owner;
     }
 
